@@ -79,7 +79,25 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Hello $name!",
+        text = "\n" +
+                "# ⏰ Beep App – Hourly Foreground Beep Service\n" +
+                "\n" +
+                "**Beep App** is a simple Android application written in Kotlin that runs a foreground service to play a beep sound exactly at the top of every hour (e.g., 09:00, 10:00, etc.). The app keeps the user informed via a persistent notification showing the next scheduled beep time.\n" +
+                "\n" +
+                "---\n" +
+                "\n" +
+                "## \uD83D\uDE80 Features\n" +
+                "\n" +
+                "- ✅ Beeps **every full hour** (aligned to the clock)\n" +
+                "- \uD83D\uDD14 Uses a **foreground service** to stay alive in the background\n" +
+                "- \uD83D\uDD53 Shows a **notification** with the time of the next beep\n" +
+                "- \uD83D\uDD10 Handles **runtime notification permission** on Android 13+\n" +
+                "\n" +
+                "---\n" +
+                "\n" +
+                "## \uD83D\uDC68\u200D\uD83D\uDCBB Author\n" +
+                "\n" +
+                "Abdelmuhaimen Seaudi (https://github.com/aseaudi)\n",
         modifier = modifier
     )
 }
